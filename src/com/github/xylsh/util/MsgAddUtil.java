@@ -14,25 +14,25 @@ import android.text.Editable;
 public class MsgAddUtil {
 
 	/**
-	 * Ìí¼Ó¶¨Ê±¶ÌĞÅ
+	 * æ·»åŠ å®šæ—¶çŸ­ä¿¡
 	 * 
 	 * @param context
-	 *            ÉÏÏÂÎÄ
+	 *            ä¸Šä¸‹æ–‡
 	 * @param phone
-	 *            ºÅÂë
+	 *            å·ç 
 	 * @param msgText
-	 *            ¶ÌĞÅÄÚÈİ
+	 *            çŸ­ä¿¡å†…å®¹
 	 * @param year
-	 *            ·¢ËÍÊ±¼ä,Äê
+	 *            å‘é€æ—¶é—´,å¹´
 	 * @param month
-	 *            ·¢ËÍÊ±¼ä,ÔÂ
+	 *            å‘é€æ—¶é—´,æœˆ
 	 * @param day
-	 *            ·¢ËÍÊ±¼ä,ÈÕ
+	 *            å‘é€æ—¶é—´,æ—¥
 	 * @param hour
-	 *            ·¢ËÍÊ±¼ä,Ğ¡Ê±
+	 *            å‘é€æ—¶é—´,å°æ—¶
 	 * @param minute
-	 *            ·¢ËÍÊ±¼ä,·ÖÖÓ
-	 * @return ³É¹¦·µ»Øtrue,Ê§°Ü·µ»Øfalse
+	 *            å‘é€æ—¶é—´,åˆ†é’Ÿ
+	 * @return æˆåŠŸè¿”å›true,å¤±è´¥è¿”å›false
 	 */
 	public static boolean addMsg(Context context, Editable phone,
 			Editable msgText, int year, int month, int day, int hour, int minute) {
@@ -41,29 +41,29 @@ public class MsgAddUtil {
 	}
 
 	/**
-	 * Ìí¼Ó¶¨Ê±¶ÌĞÅ
+	 * æ·»åŠ å®šæ—¶çŸ­ä¿¡
 	 * 
 	 * @param context
-	 *            ÉÏÏÂÎÄ
+	 *            ä¸Šä¸‹æ–‡
 	 * @param phone
-	 *            ºÅÂë
+	 *            å·ç 
 	 * @param msgText
-	 *            ¶ÌĞÅÄÚÈİ
+	 *            çŸ­ä¿¡å†…å®¹
 	 * @param year
-	 *            ·¢ËÍÊ±¼ä,Äê
+	 *            å‘é€æ—¶é—´,å¹´
 	 * @param month
-	 *            ·¢ËÍÊ±¼ä,ÔÂ
+	 *            å‘é€æ—¶é—´,æœˆ
 	 * @param day
-	 *            ·¢ËÍÊ±¼ä,ÈÕ
+	 *            å‘é€æ—¶é—´,æ—¥
 	 * @param hour
-	 *            ·¢ËÍÊ±¼ä,Ğ¡Ê±
+	 *            å‘é€æ—¶é—´,å°æ—¶
 	 * @param minute
-	 *            ·¢ËÍÊ±¼ä,·ÖÖÓ
-	 * @return ³É¹¦·µ»Øtrue,Ê§°Ü·µ»Øfalse
+	 *            å‘é€æ—¶é—´,åˆ†é’Ÿ
+	 * @return æˆåŠŸè¿”å›true,å¤±è´¥è¿”å›false
 	 */
 	public static boolean addMsg(Context context, String phone, String msgText,
 			int year, int month, int day, int hour, int minute) {
-		// È¥µôÁ½¶Ë¿Õ¸ñ
+		// å»æ‰ä¸¤ç«¯ç©ºæ ¼
 		phone = phone.trim();
 		msgText = msgText.trim();
 		if (!isValid(phone, msgText, year, month, day, hour, minute)) {
@@ -82,24 +82,24 @@ public class MsgAddUtil {
 	}
 
 	/**
-	 * Ìí¼Ó¶¨Ê±¶ÌĞÅµ½Êı¾İ¿â
+	 * æ·»åŠ å®šæ—¶çŸ­ä¿¡åˆ°æ•°æ®åº“
 	 * 
 	 * @param context
-	 *            ÉÏÏÂÎÄ
+	 *            ä¸Šä¸‹æ–‡
 	 * @param phone
-	 *            ºÅÂë
+	 *            å·ç 
 	 * @param msgText
-	 *            ¶ÌĞÅÄÚÈİ
+	 *            çŸ­ä¿¡å†…å®¹
 	 * @param year
-	 *            ·¢ËÍÊ±¼ä,Äê
+	 *            å‘é€æ—¶é—´,å¹´
 	 * @param month
-	 *            ·¢ËÍÊ±¼ä,ÔÂ
+	 *            å‘é€æ—¶é—´,æœˆ
 	 * @param day
-	 *            ·¢ËÍÊ±¼ä,ÈÕ
+	 *            å‘é€æ—¶é—´,æ—¥
 	 * @param hour
-	 *            ·¢ËÍÊ±¼ä,Ğ¡Ê±
+	 *            å‘é€æ—¶é—´,å°æ—¶
 	 * @param minute
-	 *            ·¢ËÍÊ±¼ä,·ÖÖÓ
+	 *            å‘é€æ—¶é—´,åˆ†é’Ÿ
 	 * @return the row ID of the newly inserted row, or -1 if an error occurred
 	 */
 	private static long addToDB(Context context, String phone, String msgText,
@@ -107,33 +107,33 @@ public class MsgAddUtil {
 		FixMsgSQLiteHelper sqlHelper = new FixMsgSQLiteHelper(context,
 				FixMsgSQLiteHelper.DB_NAME, null, 1);
 		String sendTime = year + "-" + (month + 1) + "-" + day + " " + hour
-				+ ":" + minute; // month´Ó0¿ªÊ¼ËãµÄ£¬ËùÒÔ´æ´¢Ê±+1
+				+ ":" + minute; // monthä»0å¼€å§‹ç®—çš„ï¼Œæ‰€ä»¥å­˜å‚¨æ—¶+1
 		long num = sqlHelper.insertFixMsg(phone, msgText, sendTime);
 		return num;
 	}
 
 	/**
-	 * Ìí¼Ó¶¨Ê±¶ÌĞÅµ½ÏµÍ³
+	 * æ·»åŠ å®šæ—¶çŸ­ä¿¡åˆ°ç³»ç»Ÿ
 	 * 
 	 * @param context
-	 *            ÉÏÏÂÎÄ
+	 *            ä¸Šä¸‹æ–‡
 	 * @param requestCode
 	 *            Private request code for the sender (currently not used).
-	 *            ÔÚÉè¶¨ÏµÍ³¶¨Ê±·¢ËÍºÍÈ¡Ïû¶¨Ê±·¢ËÍÊ±Òª±£Ö¤requestCodeÒ»ÖÂ²ÅĞĞ
+	 *            åœ¨è®¾å®šç³»ç»Ÿå®šæ—¶å‘é€å’Œå–æ¶ˆå®šæ—¶å‘é€æ—¶è¦ä¿è¯requestCodeä¸€è‡´æ‰è¡Œ
 	 * @param phone
-	 *            ºÅÂë
+	 *            å·ç 
 	 * @param msgText
-	 *            ¶ÌĞÅÄÚÈİ
+	 *            çŸ­ä¿¡å†…å®¹
 	 * @param year
-	 *            ·¢ËÍÊ±¼ä,Äê
+	 *            å‘é€æ—¶é—´,å¹´
 	 * @param month
-	 *            ·¢ËÍÊ±¼ä,ÔÂ
+	 *            å‘é€æ—¶é—´,æœˆ
 	 * @param day
-	 *            ·¢ËÍÊ±¼ä,ÈÕ
+	 *            å‘é€æ—¶é—´,æ—¥
 	 * @param hour
-	 *            ·¢ËÍÊ±¼ä,Ğ¡Ê±
+	 *            å‘é€æ—¶é—´,å°æ—¶
 	 * @param minute
-	 *            ·¢ËÍÊ±¼ä,·ÖÖÓ
+	 *            å‘é€æ—¶é—´,åˆ†é’Ÿ
 	 */
 	public static void addFixTimeMsg(Context context, int requestCode,
 			String phone, String msgText, int year, int month, int day,
@@ -152,18 +152,18 @@ public class MsgAddUtil {
 		Calendar c = Calendar.getInstance();
 		c.set(year, month, day, hour, minute, 0);
 
-		// Beginning in API 19,¿¼ÂÇÊ¹ÓÃsetExact(...)
+		// Beginning in API 19,è€ƒè™‘ä½¿ç”¨setExact(...)
 		aManager.set(AlarmManager.RTC_WAKEUP, c.getTimeInMillis(),
 				pendingIntent);
 	}
 
 	/**
-	 * È¡ÏûÄ³Ìõ¶¨Ê±¶ÌĞÅ
+	 * å–æ¶ˆæŸæ¡å®šæ—¶çŸ­ä¿¡
 	 * 
 	 * @param context
-	 *            ÉÏÏÂÎÄ
+	 *            ä¸Šä¸‹æ–‡
 	 * @param requestCode
-	 *            ÔÚÉè¶¨ÏµÍ³¶¨Ê±·¢ËÍÊ±µÄrequestCode
+	 *            åœ¨è®¾å®šç³»ç»Ÿå®šæ—¶å‘é€æ—¶çš„requestCode
 	 */
 	public static void cancleFixTimeMsg(Context context, int requestCode) {
 		AlarmManager aManager = (AlarmManager) context
@@ -177,49 +177,46 @@ public class MsgAddUtil {
 	}
 
 	/**
-	 * ÑéÖ¤²ÎÊıÊÇ·ñºÏ·¨
+	 * éªŒè¯å‚æ•°æ˜¯å¦åˆæ³•
 	 * 
-	 * @return ºÏ·¨·µ»Øtrue,·Ç·¨·µ»Øfalse
+	 * @return åˆæ³•è¿”å›true,éæ³•è¿”å›false
 	 */
 	public static boolean isValid(String phone, String msgText, int year,
 			int month, int day, int hour, int minute) {
-		// Ê×ÏÈÑéÖ¤³¤¶È
+		// é¦–å…ˆéªŒè¯é•¿åº¦
 		if (phone.length() == 0 || msgText.length() == 0) {
 			return false;
 		}
 
-		// ºÅÂëÖ»ÄÜÊÇÊı×Ö£¬Ôİ²»¿¼ÂÇ+86ĞÎÊ½µÄºÅÂë
+		// å·ç åªèƒ½æ˜¯æ•°å­—ï¼Œæš‚ä¸è€ƒè™‘+86å½¢å¼çš„å·ç 
 		if (!phone.matches("^[0-9]+$")) {
 			return false;
 		}
 
-		// »ñµÃµ±Ç°Ê±¼ä
+		// è·å¾—å½“å‰æ—¶é—´
+	String scTime = year + "-" + (month + 1) + "-" + day + " " + hour
+				+ ":" + minute; 
 		Calendar c = Calendar.getInstance();
 		int currYear = c.get(Calendar.YEAR);
 		int currMonth = c.get(Calendar.MONTH);
 		int currDay = c.get(Calendar.DAY_OF_MONTH);
 		int currHour = c.get(Calendar.HOUR_OF_DAY);
-		int currMinute = c.get(Calendar.MINUTE) + 0; // Ê±¼äÖÁÉÙÊÇµ±Ç°Ê±¼äµÄ3·ÖÖÓÖ®ºó,ËùÒÔ+3
-
-		// Ê±¼äÖÁÉÙÊÇµ±Ç°Ê±¼äµÄ3·ÖÖÓÖ®ºó
+		int currMinute = c.get(Calendar.MINUTE) + 0; 
+		
+		String currTime = currYear + "-" + (currMonth + 1) + "-" + currDay + " " + currHour
+				+ ":" + currMinute; 
+		
+		Date scDate = null;
+		Date currDate = null;
 		try {
-			// ²»ÄÜÊÇ¹ıÈ¥µÄÈÕÆÚ
-			if (year < currYear
-					|| (year == currYear && month < currMonth)
-					|| (year == currYear && month == currMonth && day < currDay)) {
-				return false;
-			}
-			// Èç¹ûÈÕÆÚÊÇ½ñÌì£¬ÄÇÃ´²»ÄÜÊÇ¹ıÈ¥µÄÊ±¼ä
-			if (year == currYear || month == currMonth || day == currDay) {
-				if (hour < currHour
-						|| (hour == currHour && minute < currMinute)) {
-					return false;
-				}
-			}
-
-		} catch (Exception e) {
+			scDate = (Date) new SimpleDateFormat("yyyy-MM-dd HH:mm", Locale.ENGLISH).parse(scTime);
+			currDate = (Date) new SimpleDateFormat("yyyy-MM-dd HH:mm", Locale.ENGLISH).parse(currTime);
+		} catch (ParseException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		if(scDate.getTime() <= currDate.getTime()){
 			return false;
-			// throw new IllegalArgumentException();
 		}
 
 		return true;
